@@ -1,8 +1,8 @@
 # c2c2018
-Course material and references for Campus To Corporate course, 2018.
+### Course material and references for Campus To Corporate course, 2018.
 
 
-C2C (Masterminds: @havanagrawal, Harshil Mavani and Devika Shanbhag) is targetted at Students willing to ace the interview process after Engineering. The course is curated for students of Mumbai University but covers topics widely useful. 
+C2C (Masterminds: [Havan Agrawal](https://github.com/havanagrawal), Harshil Mavani and Devika Shanbhag) is targetted at Students willing to ace the interview process after Engineering. The course is curated for students of Mumbai University but covers topics widely useful. 
 
 
 This repo is a clone of original c2c2017 repo but this will be updated on weekly basis as the course progresses. 

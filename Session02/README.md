@@ -236,6 +236,9 @@ Practice:
 8.	https://www.hackerrank.com/challenges/java-negative-subarray
 9.	https://www.hackerrank.com/challenges/jumping-on-the-clouds
 
+Link: https://www.hackerrank.com/contests/c2c2017-1  
+Note: The problem Marc's Cakewalk was added accidentally. It requires sorting which was not covered by this point.  
+
 #### <a name="miscellaneous"></a>Miscellaneous
 1.	Write a recursive and non-recursive implementation for getting arbitrary Pascal triangle numbers.  
 <sup>n</sup>C<sub>r</sub> = <sup>n-1</sup>C<sub>r</sub> + <sup>n-1</sup>C<sub>r-1</sub>  
@@ -250,5 +253,4 @@ Sub-arrays of length 3 are {1, 4, 3}, {4, 3, 6}.
 In this case, you end up having to recalculate the sum of {1, 4} and {4, 3}, which you already calculated earlier. Is there a way to memoize the results?
 
 ### <a name="test"></a>Test 
-Link: https://www.hackerrank.com/contests/c2c2017-1  
-Note: The problem Marc's Cakewalk was added accidentally. It requires sorting which was not covered by this point.  
+TBA

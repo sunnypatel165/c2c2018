@@ -235,9 +235,7 @@ Practice:
 7.	https://www.hackerrank.com/challenges/bon-appetit
 8.	https://www.hackerrank.com/challenges/java-negative-subarray
 9.	https://www.hackerrank.com/challenges/jumping-on-the-clouds
-
-Link: https://www.hackerrank.com/contests/c2c2017-1  
-Note: The problem Marc's Cakewalk was added accidentally. It requires sorting which was not covered by this point.  
+10.	https://www.hackerrank.com/contests/c2c2017-1 (Note: The problem Marc's Cakewalk was added accidentally. It requires sorting which was not covered by this point.)
 
 #### <a name="miscellaneous"></a>Miscellaneous
 1.	Write a recursive and non-recursive implementation for getting arbitrary Pascal triangle numbers.  

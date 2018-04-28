@@ -8,11 +8,15 @@
     3. [Instance Methods](#class-instance-method)
 	4. [Static Methods and Instances](#class-static)
 	5. [Practice](#class-practice)
-2. [The String class](#string)
-3. [Assignments](#assignments)
+3. [The String class](#string)
+4. [Searching Algorithms](#searching)
+    1. [Linear Search](#linearSearch)
+    2. [Binary Search](#binarySearch)
+    3. [Important Notes](#searchingNotes)
+5. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
-4. [Test](#test)
+6. [Test](#test)
 
 ### <a name="function-overload"></a>Function Overloading
 
@@ -354,6 +358,72 @@ Practice:
 3.	https://www.hackerrank.com/challenges/java-string-compare 
 4.	https://www.hackerrank.com/challenges/caesar-cipher-1 
 5.	https://www.hackerrank.com/challenges/camelcase 
+### <a name="serching"></a>Searching Algorithms 
+
+Searching is a technique which is used to find whether an element with a particular value/properties exists in the given collection or not. If it does, we need to print/return the index where it is stored.
+
+Two of the most widely used algortihms are Linear Search and Binary Search. 
+
+#### <a name="linearSearch"></a>Linear Search:
+This algorithm compares each element with the element to be found till either the element is found or the entire array is traversed. 
+```
+def linearSearch(int a[], int elementToBeFound):
+
+	for i from 0 until a.length:
+	
+		if a[i]==elementToBeFound 
+			//Element found at index i 
+			return i
+			
+	//Element not found in the array(return not called)
+	return -1
+```
+#### <a name="binarySearch"></a>Binary Search:
+When the input data is sorted, we can use some optimisation instead of traversing the entire array.  
+Begining with the middle of the array, in each iteration we see whether the current mid is greater than, less than or equal to the element being serached. 
+
+If the middle element is smaller than the elementToBeFound, then the elementToBeFound will be in the right half.  
+If the middle element is greater than the elementToBeFound, then the elementToBeFound will be in the left half.  
+At each step, we need to update our varibles to work on the selected half of the array.
+
+```
+def binarySearch(int a[], int elementToBeFound):
+	
+	start = 0
+	end = a.length
+	
+	while(start <= end):
+		//find the mid based on current start and end.
+		mid = (start+end)/2
+		
+		if(a[mid]==elementToBeFound)
+			//element found at position = mid 
+			return mid
+			
+		if(a[mid] > elementToBeFound)
+			//element lies in the left half of the array 
+			end = mid - 1
+			
+		if(a[mid] < elementToBeFound)
+			//element lies in the right half of the array
+			start = mid + 1
+			
+	//element not found!
+	return -1
+```
+#### <a name="searchingNotes"></a>Important notes
+## 1.	 Binary Search works only for sorted arrays!  
+	The whole idea revolves around deciding whether the element lies in left or the right half of the current array.
+2.	Let's say we were to search an element at the last position in a sorted array containing 100 elements-  
+	Using Linear Search - the loop will run 100 times and hence 100 comparisons.   
+	Using Binary Search - the while loop will 7 times to reach 100th element.   
+	
+	In fact, any element in this array can be found via binary Search in a maximum of 7 comparisons. This is because :  
+	Time complexity for ```linearSearch``` is ```O(N)``` and,   
+	Time complexity for ```binarySearch```is ```O(log2(N))```.  
+	Essentially, we are decreasing the array size by half at each stage which makes the algorithm faster. 
+	
+## 3.	Did you know you have been applying binary search all your lives? - Dictonories. Think about it. 
 
 ### <a name="assignments"></a>Assignments 
 
@@ -380,4 +450,5 @@ Practice:
     6. `max(int[] arr)`
     7. `average(long[] arr)`  
     Think whether these should be instance methods or static methods. Decide on appropriate data types. 
+2. Write a recursive version of binarySearch function written above.
 

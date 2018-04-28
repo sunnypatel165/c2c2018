@@ -358,14 +358,14 @@ Practice:
 3.	https://www.hackerrank.com/challenges/java-string-compare 
 4.	https://www.hackerrank.com/challenges/caesar-cipher-1 
 5.	https://www.hackerrank.com/challenges/camelcase 
-### <a name="serching"></a>Searching Algorithms 
+### <a name="searching"></a>Searching Algorithms 
 
 Searching is a technique which is used to find whether an element with a particular value/properties exists in the given collection or not. If it does, we need to print/return the index where it is stored.
 
 Two of the most widely used algortihms are Linear Search and Binary Search. 
 
 #### <a name="linearSearch"></a>Linear Search:
-This algorithm compares each element with the element to be found till either the element is found or the entire array is traversed. 
+This algorithm compares each element with the elementToBeFound till either the element is found or the entire array is traversed. 
 ```
 def linearSearch(int a[], int elementToBeFound):
 
@@ -379,8 +379,8 @@ def linearSearch(int a[], int elementToBeFound):
 	return -1
 ```
 #### <a name="binarySearch"></a>Binary Search:
-When the input data is sorted, we can use some optimisation instead of traversing the entire array.  
-Begining with the middle of the array, in each iteration we see whether the current mid is greater than, less than or equal to the element being serached. 
+When the input data is sorted, we can use some optimisation, instead of traversing the entire array.  
+Beginning with the middle of the array, in each iteration we see whether the current mid is greater than, less than or equal to the elementToBeFound. 
 
 If the middle element is smaller than the elementToBeFound, then the elementToBeFound will be in the right half.  
 If the middle element is greater than the elementToBeFound, then the elementToBeFound will be in the left half.  
@@ -412,7 +412,7 @@ def binarySearch(int a[], int elementToBeFound):
 	return -1
 ```
 #### <a name="searchingNotes"></a>Important notes
-## 1.	 Binary Search works only for sorted arrays!  
+1.	**Binary Search works only for sorted arrays!**  
 	The whole idea revolves around deciding whether the element lies in left or the right half of the current array.
 2.	Let's say we were to search an element at the last position in a sorted array containing 100 elements-  
 	Using Linear Search - the loop will run 100 times and hence 100 comparisons.   
@@ -423,7 +423,7 @@ def binarySearch(int a[], int elementToBeFound):
 	Time complexity for ```binarySearch```is ```O(log2(N))```.  
 	Essentially, we are decreasing the array size by half at each stage which makes the algorithm faster. 
 	
-## 3.	Did you know you have been applying binary search all your lives? - Dictonories. Think about it. 
+3.	**Did you know you have been applying binary search all your lives? - Dictonories. Think about it.** 
 
 ### <a name="assignments"></a>Assignments 
 

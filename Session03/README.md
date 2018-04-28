@@ -279,15 +279,14 @@ Two of the most widely used algortihms are Linear Search and Binary Search.
 This algorithm compares each element with the elementToBeFound till either the element is found or the entire array is traversed. 
 ```
 def linearSearch(int a[], int elementToBeFound):
-
-	for i from 0 until a.length:
-	
-		if a[i]==elementToBeFound 
-			//Element found at index i 
-			return i
+    
+    for i from 0 until a.length:
+        if a[i]==elementToBeFound 
+            // Element found at index i 
+            return i
 			
-	//Element not found in the array(return not called)
-	return -1
+    // Element not found in the array(return not called)
+    return -1
 ```
 #### <a name="binarySearch"></a>Binary Search:
 When the input data is sorted, we can use some optimisation, instead of traversing the entire array.  
@@ -299,28 +298,27 @@ At each step, we need to update our varibles to work on the selected half of the
 
 ```
 def binarySearch(int a[], int elementToBeFound):
+    start = 0
+    end = a.length
 	
-	start = 0
-	end = a.length
-	
-	while(start <= end):
-		//find the mid based on current start and end.
-		mid = (start+end)/2
+    while(start <= end):
+        // find the mid based on current start and end.
+        mid = (start + end)/2
 		
-		if(a[mid]==elementToBeFound)
-			//element found at position = mid 
-			return mid
+	if(a[mid]==elementToBeFound)
+        // element found at position = mid 
+            return mid
 			
-		if(a[mid] > elementToBeFound)
-			//element lies in the left half of the array 
-			end = mid - 1
+        if(a[mid] > elementToBeFound)
+            // element lies in the left half of the array 
+            end = mid - 1
 			
-		if(a[mid] < elementToBeFound)
-			//element lies in the right half of the array
-			start = mid + 1
+            if(a[mid] < elementToBeFound)
+            // element lies in the right half of the array
+            start = mid + 1
 			
-	//element not found!
-	return -1
+    // element not found!
+    return -1
 ```
 #### <a name="searchingNotes"></a>Important notes
 1.	**Binary Search works only for sorted arrays!**  
@@ -334,7 +332,7 @@ def binarySearch(int a[], int elementToBeFound):
 	Time complexity for ```binarySearch```is ```O(log2(N))```.  
 	Essentially, we are decreasing the array size by half at each stage which makes the algorithm faster. 
 	
-3.	**Did you know you have been applying binary search all your lives? - Dictonories. Think about it.** 
+3.	**Did you know you have been applying binary search all your lives? - Dictionaries. Think about it.** 
 
 ### <a name="assignments"></a>Assignments 
 

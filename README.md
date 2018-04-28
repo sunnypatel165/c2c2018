@@ -89,3 +89,24 @@ This repo is a clone of original c2c2017 repo but this will be updated on weekly
     7. [Test](Session02#test)
     
 </details>
+
+<details>
+<summary>Session 3</summary>
+    
+1. [Session 2](Session03)
+    1. [Classes](Session03#classes)
+        1. [Constructors](Session03#class-constructor)
+        2. [Instance Variables](Session03#class-instance-var)
+        3. [Instance Methods](Session03#class-instance-method)
+    	4. [Static Methods and Instances](Session03#class-static)
+	    5. [Practice](Session03#class-practice)
+    2. [The String class](Session03#string)
+    3. [Searching Algorithms](Session03#searching)
+        1. [Linear Search](Session03#linearSearch)
+        2. [Binary Search](Session03#binarySearch)
+        3. [Important Notes](Session03#searchingNotes)
+    4. [Assignments](Session03#assignments)
+        1. [HackerRank](Session03#hackerrank)
+        2. [Miscellaneous](Session03#miscellaneous)
+    
+</details>

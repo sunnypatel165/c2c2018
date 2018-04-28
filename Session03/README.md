@@ -16,7 +16,6 @@
 5. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
-6. [Test](#test)
 
 ### <a name="function-overload"></a>Function Overloading
 
@@ -255,43 +254,6 @@ This is obvious when you think about it. Since a static method belongs to the cl
     6. A static variable called `ORIGIN`, that represents the origin.  
     Again, think about which of these methods should be static.
 
-    
-#### <a name="class-final"></a>The `final` modifier
-
-The `final` modifier can be applied to
-1. Variables  
-2. Methods (next session)  
-3. Classes (next session)  
-
-
-When the `final` modifier is applied to a variable, it means that once the variable is assigned a value, it cannot be modified.
-
-```java
-class Student {
-	// This is formally known as a "blank final".
-	// If you do not initialize this in every constructor, you will get a compile time error
-	final int rollNo;
-	
-	Student(int r) {
-		rollNo = r;
-	}
-}
-```
-
-You can assign a value to a final instance variable
-1. In the constructor 
-2. The point of declaration  
-3. Instantiation block (next session)  
-
-Remember that when you assign the value at the point of declaration, EVERY instance of the class will have that value, and can not be changed at all.
-
-```java
-class Person {
-	// just an example
-	final int noOfBones = 206;
-}
-```
-
 ### <a name="string"></a>The `String` class
 
 The `String` class is a rather special class in Java, since it has several behaviors that make it appear to be a primitive.
@@ -415,7 +377,7 @@ def binarySearch(int a[], int elementToBeFound):
 1.	**Binary Search works only for sorted arrays!**  
 	The whole idea revolves around deciding whether the element lies in left or the right half of the current array.
 2.	Let's say we were to search an element at the last position in a sorted array containing 100 elements-  
-	Using Linear Search - the loop will run 100 times and hence 100 comparisons.   
+	Using Linear Search - the loop will run 100 times to reach 100th element.   
 	Using Binary Search - the while loop will 7 times to reach 100th element.   
 	
 	In fact, any element in this array can be found via binary Search in a maximum of 7 comparisons. This is because :  

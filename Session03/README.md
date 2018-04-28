@@ -1,71 +1,20 @@
 # Session 3
 
 ## Table of Contents
-1. [Function Overloading](#function-overload)
-2. [Classes](#classes)
+1. [Classes](#classes)
     1. [Constructors](#class-constructor)
     2. [Instance Variables](#class-instance-var)
     3. [Instance Methods](#class-instance-method)
 	4. [Static Methods and Instances](#class-static)
 	5. [Practice](#class-practice)
-3. [The String class](#string)
-4. [Searching Algorithms](#searching)
+2. [The String class](#string)
+3. [Searching Algorithms](#searching)
     1. [Linear Search](#linearSearch)
     2. [Binary Search](#binarySearch)
     3. [Important Notes](#searchingNotes)
-5. [Assignments](#assignments)
+4. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
-
-### <a name="function-overload"></a>Function Overloading
-
-Function Overloading simply means defining two or more functions with the same name, but with distinguishable signatures.  
-
-Function overloading is done by changing either:
-1. Types of the arguments  
-2. Number of arguments  
-
-The return type is *NOT* part of the signature, and so changing the return type is not sufficient for overloading.
-
-```java
-// Two arguments
-public static int min(int a, int b) {
-    return a < b ? a : b;
-}
-
-// Three arguments
-public static int min(int a, int b, int c) {
-    return min(min(a, b), d);
-}
-
-// Single argument
-public static int min(int[] arr) {
-    int min = arr[0];
-    
-    for (int i = 1; i < arr.length; i++) {
-        min = arr[i] < min ? arr[i] : min;
-    }
-    
-    return min;
-}
-
-// Two arguments, but different type
-public static double min(double a, double b) {
-    return Math.min(a, b);
-}
-
-// This will NOT compile, because you cannot overload by return type
-public static long min(int a, int b) {
-    return (long)(a < b ? a : b);
-}
-```
-
-Practice:
-1. Write an overloaded function for GCD (Greatest Common Divisor) with the following signatures:
-    1. `int gcd(int a, int b)`
-    2. `int gcd(int a, int b, int c)`
-    3. `int gcd(int[] arr)`
-2. The data type of `System.out` is [PrintStream](https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html). The `println` method belongs to this instance. Check out the docs and look for the `println` method, and its different overloaded variations.
 
 ### <a name="classes"></a>Classes
 

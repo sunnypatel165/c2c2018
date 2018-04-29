@@ -5,7 +5,7 @@
 C2C (Masterminds: [Havan Agrawal](https://github.com/havanagrawal), Harshil Mavani and Devika Shanbhag) is targetted at Students willing to ace the interview process after Engineering. The course is curated for students of Mumbai University but covers topics widely useful. 
 
 
-This repo is a clone of original c2c2017 repo but this will be updated on weekly basis as the course progresses. 
+This repo is built on top of original c2c2017 repo and will be updated on weekly basis as the course progresses. 
 
 
 <img src="https://github.com/havanagrawal/c2c2017/blob/master/RubberDucks.jpg" width="500" height="500"></a>

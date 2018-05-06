@@ -93,7 +93,7 @@ This repo is built on top of original c2c2017 repo and will be updated on weekly
 <details>
 <summary>Session 3</summary>
     
-1. [Session 2](Session03)
+1. [Session 3](Session03)
     1. [Classes](Session03#classes)
         1. [Constructors](Session03#class-constructor)
         2. [Instance Variables](Session03#class-instance-var)
@@ -108,5 +108,12 @@ This repo is built on top of original c2c2017 repo and will be updated on weekly
     4. [Assignments](Session03#assignments)
         1. [HackerRank](Session03#hackerrank)
         2. [Miscellaneous](Session03#miscellaneous)
+
+<summary>Session 4</summary>
     
+1. [Session 4](Session04)
+    1. [Sorting](Session04#sorting)
+    4. [Assignments](Session04#assignments)
+        1. [HackerRank](Session03#hackerrank)
+        2. [Miscellaneous](Session03#miscellaneous)
 </details>

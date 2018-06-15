@@ -120,3 +120,22 @@ This repo is built on top of original c2c2017 repo and will be updated on weekly
         2. [Miscellaneous](Session03#miscellaneous)
 	
 </details>
+
+<details>
+<summary>Session 5</summary>    
+    
+1. [Session 5](Session05)
+    1. [Call By Value / Call By Copy Of Reference](Session05#parameter-passing)
+    2. [The `this` keyword](Session05#this-keyword)
+    3. [Inheritance](Session05#inheritance)
+        1. [Inheritance Models](Session05#inheritance-models)
+        2. [Access Modifiers](Session05#access-modifiers)
+    	3. [The `extends` keyword](Session05#extends-keyword)
+    	4. [The Point Example](Session05#point-example)
+    4. [Overriding](Session05#overriding)
+    5. [Abstract Data Structures - an Overview](Session05#ads)
+    6. [Assignments](Session05#assignments)
+        1. [HackerRank](Session05#hackerrank)
+        2. [Miscellaneous](Session05#miscellaneous)
+    
+</details>

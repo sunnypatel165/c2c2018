@@ -22,12 +22,12 @@ Primitives example:
 
 ```java
 class PrimitiveArg {
-	
+
 	// This "a" is a variable local to this function
 	public static void modify(int a) {
 		a = a + 1;
 	}
-	
+
 	public static void main(String[] args) {
 		int a = 10;
 		modify(a);
@@ -45,7 +45,7 @@ class ObjectRefArg {
 	public static void modifyFail(Student s) {
 		s = new Student("PETER");
 	}
-	
+
 	public static void main(String[] args) {
 		Student s = new Student("JON");
 		modifyFail(s);
@@ -66,7 +66,7 @@ class ObjectRefArg {
 	public static void modifySuccess(Student s) {
 		s.setName("PETER");
 	}
-	
+
 	public static void main(String[] args) {
 		Student s = new Student("JON");
 		modifySuccess(s);
@@ -100,10 +100,10 @@ This clearly tells you what the constructor expects, and what each argument mean
 ```java
 class Student {
 	String name;
-	
+
 	Student(String name) {
 		// The instance variable name is being hidden/shadowed by the local argument "name"
-		
+
 		// This is simply assigning the value of the local variable name to itself!
 		name = name;
 	}
@@ -126,7 +126,7 @@ In order to resolve this problem, we have the `this` keyword.
 ```java
 class Student {
 	String name;
-	
+
 	Student(String name) {
 		// this.name ensures that we access the instance variable.
 		this.name = name;
@@ -163,7 +163,7 @@ A small access matrix makes it very clear what acccess they provide:
 | default*  | Y            | Y              | N                                    | N               |
 | private   | Y            | N              | N                                    | N               |
 
-*default is not actually a keyword. It is the default access applied when you don't specify anything.  
+default is not actually a keyword. It is the default access applied when you don't specify anything.  
 
 #### <a name="extends-keyword"></a>The `extends` keyword
 
@@ -184,22 +184,22 @@ Overriding is simply rewriting or redefining the implementation of an inherited 
 class Rectangle {
 	private int width;
 	private int height;
-	
-	public Rectangle(int width, int height) {	
+
+	public Rectangle(int width, int height) {
 		this.width = width;
 		this.height = height;
 	}
-	
+
 	public int getArea() {
-		// We don't need to use the this keyword here, 
+		// We don't need to use the this keyword here,
 		// because there are no variables that hide the instance variable
 		return width * height;
 	}
-	
+
 	public int getWidth() {
 		return width;
 	}
-	
+
 	public int getHeight() {
 		return height;
 	}
@@ -208,19 +208,19 @@ class Rectangle {
 // A square is a rectangle
 class Square extends Rectangle {
 	private int length;
-	
+
 	public Square(int length) {
 		this.length = length;
 	}
-	
+
 	public int getArea() {
 		return length * length;
 	}
-	
+
 	public int getWidth() {
 		return length;
 	}
-	
+
 	public int getHeight() {
 		return length;
 	}
@@ -254,7 +254,49 @@ This is only an overview of a few common abstract data structures. They are call
 	Problems:  
 		1. Counting unique characters in a string  
 
-### <a name="assignments"></a>Assignments 
+### <a name="linked-list"></a>Linked Lists
+
+Arrays have multiple drawbacks, not all of which are apparent at first sight.
+
+  1. Arrays have a fixed size. It is however not possible to always know the required size of the array at the very beginning.  
+  2. To alleviate the above issue, arrays are often initialized with a larger size than required.  
+  3. They are not suitable for fast insertions or deletions, since they involve shifting elements.  
+
+TL;DR:
+
+  1. Can fall short of space  
+  2. Occupy too much space  
+  3. Not good for fast random insertions/deletions  
+
+Linked lists solve these issues. A linked list simply consists of "nodes", where each node holds some data, and holds a pointer or reference to the next element in the list.
+
+A typical simple Node class in Java may look like the following:
+
+```java
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+```
+
+Notice how one of the member variables in the class is a reference to another Node.
+
+A fantastic visualization of various linked list operations can be found [here](https://visualgo.net/en/list).
+
+#### Problems
+
+1. https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list
+2. https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list
+3. https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list
+4. https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list
+5. https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list
+
+### <a name="assignments"></a>Assignments
 
 #### <a name="hackerrank"></a>HackerRank
 
@@ -263,7 +305,12 @@ Solve these AFTER you have solved the miscellaneous section, since the classes y
 1. https://www.hackerrank.com/challenges/balanced-brackets
 2. https://www.hackerrank.com/challenges/simple-text-editor
 3. https://www.hackerrank.com/challenges/maximum-element
-
+4. https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse
+5. https://www.hackerrank.com/challenges/reverse-a-linked-list
+6. https://www.hackerrank.com/challenges/compare-two-linked-lists
+7. https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists
+8. https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail
+9. https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list
 
 #### <a name="miscellaneous"></a>Miscellaneous
 1. Implement a class called `CharStack`. It should have the following methods:
@@ -273,7 +320,7 @@ Solve these AFTER you have solved the miscellaneous section, since the classes y
 	4. `boolean isEmpty()`
 	5. `boolean isFull()`
 	It should also have a maximum capacity, beyond which the stack cannot grow.
-2. Implement a similar stack for Strings.	
+2. Implement a similar stack for Strings.
 3. Implement the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Pseudocode). What kind of a data structure is the sieve? 	
 
 When solving these problems, think about each variable and method with `private`, `protected`, `public`, `static` and `final` in mind.

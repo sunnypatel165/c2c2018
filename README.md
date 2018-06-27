@@ -139,3 +139,30 @@ This repo is built on top of original c2c2017 repo and will be updated on weekly
         2. [Miscellaneous](Session05#miscellaneous)
     
 </details>
+
+<details>
+<summary>Session 6</summary>    
+    
+1. [Session 6](Session06)
+    1. [Abstract Classes](Session06#abstract-classes)
+    2. [Interfaces](Session06#interfaces)
+    3. [Dynamic Method Dispatch](Session06#dynamic-method-dispatch)
+    4. [Assignments](Session06#assignments)
+        1. [HackerRank](Session06#hackerrank)
+        2. [Miscellaneous](Session06#miscellaneous)	
+
+</details>
+
+<details>
+<summary>Session 7</summary>        
+        
+1. [Session 7](Session07)
+    1. [The Collections Framework - Part I](Session07#cfw)
+    	1. [The Collection Hierarchy](Session07#hierarchy)
+    	2. [Lists, Queues and Sets](Session07#list-queue-set)
+    	3. [Problems](Session07#cfwproblems)
+    2. [Assignments](Session07#assignments)
+    	1. [HackerRank](Session07#hackerrank)
+    	2. [LeetCode](Session07#leetcode)
+        
+</details>

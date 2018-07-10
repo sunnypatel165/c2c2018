@@ -134,7 +134,8 @@ This repo is built on top of original c2c2017 repo and will be updated on weekly
     	4. [The Point Example](Session05#point-example)
     4. [Overriding](Session05#overriding)
     5. [Abstract Data Structures - an Overview](Session05#ads)
-    6. [Assignments](Session05#assignments)
+    6. [Linked Lists](Session05#linked-list)
+    7. [Assignments](Session05#assignments)
         1. [HackerRank](Session05#hackerrank)
         2. [Miscellaneous](Session05#miscellaneous)
     
@@ -166,3 +167,40 @@ This repo is built on top of original c2c2017 repo and will be updated on weekly
     	2. [LeetCode](Session07#leetcode)
         
 </details>
+
+<details>
+<summary>Session 8</summary>        
+        
+1. [Session 8](Session08)
+    1. [Trees](Session08#trees)
+        1. [Binary Trees](Session08#binary-trees)
+        2. [Binary Search Trees](Session08#bst)
+    2. [The Object Class, `equals` and `hashCode`](Session08#object)
+    3. [The Collections Framework - Part II](Session08#cfw)
+        1. [Maps!](Session08#maps)
+        2. [Problems](Session08#cfwproblems)
+    4. [Assignments](Session08#assignments)
+        1. [HackerRank](Session08#hackerrank)
+	2. [LeetCode](Session08#leetcode)
+	3. [Miscellaneous](Session08#miscellaneous)
+	
+</details>
+
+<details>
+<summary>Session 9</summary>        
+        
+1. [Session 9](Session09)
+    1. [Graphs](Session09#graphs)
+        1. [Applications](Session09#applications)
+        2. [Classification](Session09#classification)
+        3. [Representation](Session09#representation)
+        4. [Terminology](Session09#terminology)
+        5. [Traversals and Algorithms](Session09#traversals)
+        6. [Problems](Session09#problems)
+        7. [An Extensive List of Graph Topics](Session09#gfg-graphs)
+    2. [Assignments](Session09#assignments)
+        1. [HackerRank](Session09#hackerrank)
+        2. [LeetCode](Session09#leetcode)
+        
+</details>
+
